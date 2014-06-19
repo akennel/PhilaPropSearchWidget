@@ -30,56 +30,31 @@ function redirect() {
 
 <style>
 
-#addressBlock{
-float:left;
+#address{
+width:100%;
 }
 
 #unitBlock{
 float:right;
 }
 
-.labelBlock{
-font: bold 18px Arial, sans-serif;
-margin-bottom: 0px;
-}
-
 </style>
 
-<div class="home"><div class="hero">
-    <h1>Property Search</h1>
-</div>
-
-<div id="search-tabs" class="tabbable">
-    <div class="tab-content row">
-        <div class="tab-pane active" id="byAddress">
-            <form data-method="address">
-                <div class="controls-row">
-                    <div class="control-group span4" id="addressBlock">
-                        <h4 class="labelBlock"><label for="address">Address</label></h4>
-                        <input type="text" name="address" id="address" placeholder="ex. 1234 Market St" class="span4" autofocus="" value="">
-                    </div>
-                    <div class="control-group span2" id="unitBlock">
-                        <h4 class="labelBlock"><label for="unit">Unit</label></h4>
-                        <input type="text" name="unit" id="unit" placeholder="ex. B" class="span2">
-                    </div>
-                </div>
-            </form>
-        </div>
+<div id="PhilaPropSearchWidget">
+	<span id="PhilaPropSearchMainWindow">
+		<h1>Property Search</h1>	
+		<div id="PhilaPropSearchInputFields">
+			<input type="text" name="address" id="address" placeholder="Address:eg 1234 Market St" class="span4" autofocus="" value="">
+			<br>
+			<input type="text" name="unit" id="unit" placeholder="Unit:eg 1A" class="span2">
+		</div>
 		<h2>
 			<input type="button" onclick="redirect()" value="Search">
 		</h2>
-    </div>
-</div>
+		<a href="http://property.phila.gov/">More Search Options</a>
+	</span>
+</div>        
 
-
-
-<hr>
-
-<footer>
-<a href="http://property.phila.gov/">More Search Options</a>
-</footer>
-        
-</div>
 
 EOM;
 
