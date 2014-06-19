@@ -40,7 +40,7 @@ float:right;
 
 </style>
 
-<div id="PhilaPropSearchWidget">
+<div id="PhilaPropSearchWidget" class="PhilaWidget">
 	<span id="PhilaPropSearchMainWindow">
 		<h1>Property Search</h1>	
 		<div id="PhilaPropSearchInputFields">
