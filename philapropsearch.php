@@ -9,7 +9,7 @@ Author URI: localhost/wordpress
 add_shortcode('PhilaPropSearch', 'philapropsearch_handler');
 
 function philapropsearch_handler(){
-    $message = <<<EOM
+$message = <<<EOM
 
 <head>
 <script type="text/javascript">
@@ -42,7 +42,7 @@ float:right;
 
 <div id="PhilaPropSearchWidget" class="PhilaWidget">
 	<span id="PhilaPropSearchMainWindow">
-		<h1>Property Search</h1>	
+		<h1 class="PhilaWidgetTitle">Property Search</h1>	
 		<div id="PhilaPropSearchInputFields">
 			<input type="text" name="address" id="address" placeholder="Address:eg 1234 Market St" class="span4" autofocus="" value="">
 			<br>
