@@ -11,7 +11,6 @@ add_shortcode('PhilaPropSearch', 'philapropsearch_handler');
 function philapropsearch_handler(){
 $message = <<<EOM
 
-<head>
 <script type="text/javascript">
 <!--
 function redirect() {
@@ -26,32 +25,17 @@ function redirect() {
 }
 //-->
 </script>
-</head>
-
-<style>
-
-#address{
-width:100%;
-}
-
-#unitBlock{
-float:right;
-}
-
-</style>
 
 <div id="PhilaPropSearchWidget" class="PhilaWidget">
 	<span id="PhilaPropSearchMainWindow">
 		<h1 class="PhilaWidgetTitle">Property Search</h1>	
 		<div id="PhilaPropSearchInputFields">
-			<input type="text" name="address" id="address" placeholder="Address:eg 1234 Market St" class="span4" autofocus="" value="">
+			<input type="text" name="address" id="address" placeholder="Address: eg 1234 Market St" class="span4" autofocus="" value="">
 			<br>
-			<input type="text" name="unit" id="unit" placeholder="Unit:eg 1A" class="span2">
+			<input type="text" name="unit" id="unit" placeholder="Unit: eg 1A" class="span2">
 		</div>
-		<h2>
 			<input type="button" onclick="redirect()" value="Search">
-		</h2>
-		<a href="http://property.phila.gov/">More Search Options</a>
+		<a href="http://property.phila.gov/">More Search Options &raquo;</a>
 	</span>
 </div>        
 
