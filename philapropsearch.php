@@ -30,11 +30,16 @@ function redirect() {
 	<span id="PhilaPropSearchMainWindow">
 		<h1 class="PhilaWidgetTitle">Property Search</h1>	
 		<div id="PhilaPropSearchInputFields">
+        <div class="left-inner-addon">
+        <span class="glyphicon glyphicon-search"></span>
 			<input type="text" name="address" id="address" placeholder="Address: eg 1234 Market St" class="span4" autofocus="" value="">
-			<br>
+			</div>
+            
 			<input type="text" name="unit" id="unit" placeholder="Unit: eg 1A" class="span2">
-		</div>
+        </div>
 			<input type="button" onclick="redirect()" value="Search">
+        
+        <p>Search by address, account number, block, or intersection for property data in the City of Philadelphia.</p>
 		<a href="http://property.phila.gov/">More Search Options &raquo;</a>
 	</span>
 </div>        
