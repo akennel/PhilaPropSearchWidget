@@ -14,14 +14,7 @@ $message = <<<EOM
 <script type="text/javascript">
 <!--
 function redirect() {
-	if (document.getElementById('unit').value != "")
-	{
-		window.location = "http://property.phila.gov/#address/" + document.getElementById('address').value + "/" + document.getElementById('unit').value; 
-	}
-	else
-	{
 		window.location = "http://property.phila.gov/#address/" + document.getElementById('address').value
-	}
 }
 //-->
 </script>
@@ -34,8 +27,6 @@ function redirect() {
         <span class="glyphicon glyphicon-search"></span>
 			<input type="text" name="address" id="address" placeholder="Address: eg 1234 Market St" class="span4" autofocus="" value="">
 			</div>
-            
-			<input type="text" name="unit" id="unit" placeholder="Unit: eg 1A" class="span2">
         </div>
 			<input type="button" onclick="redirect()" value="Search">
         
