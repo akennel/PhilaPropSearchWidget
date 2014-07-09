@@ -25,11 +25,11 @@ function redirect() {
 		<div id="PhilaPropSearchInputFields">
         <div class="left-inner-addon">
         <span class="glyphicon glyphicon-search"></span>
-			<input type="text" name="address" id="address" placeholder="Address: eg 1234 Market St" class="prop-search" value="">
+			<input type="text" name="address" id="address" placeholder="Address: eg 1234 Market St" class="span4" value="">
 			</div>
         </div>
 			<input type="button" onclick="redirect()" value="Search">
-		<a href="http://property.phila.gov/">More Search Options &raquo;</a>
+		<p><a href="http://property.phila.gov/">More Search Options &raquo;</a></p>
 	</span>
 </div>        
 
